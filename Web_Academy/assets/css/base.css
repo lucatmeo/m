@@ -1,0 +1,206 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font--l: 'Roboto', sans-serif;
+
+    --mau_VTB: #014E86;
+    --mau_VTB_2: #38C5E7;
+
+    --mau_AGRB: #B10044;
+    --mau_AGRB_2: #FBE805;
+
+    --mau_VCB: #00471B;
+    --mau_VCB_2: #8DC145;
+
+    --mau_BIDV: #006C6C;
+    --mau_BIDV_2: #FDC52A;
+
+    --mau_chu_dao_1: #0e76bc;
+    --mau_chu_dao_2: #ff9536;
+    --mau_chu_dao_3: #1d1d1d;
+    --mau_chu_dao_4: #E6AF2E;
+    --do_hay_dung: #D9001B;
+
+    --mau_chu_dao_1_about: #0E76BC;
+    --mau_chu_dao_2_about: #ff9536;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; /*có thể để là 62,5% để khi set đơn vị "rem" ta set 1,2rem tương đương với 12px */
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: bold; */
+    box-sizing: border-box;
+    /* font-style:italic; */
+}
+/* setting */
+.--padding{
+    padding: 20px;
+}
+.--backgrou_color--block--1 {
+    background-color: #f2f2f2;
+}
+
+/* ------- */
+
+
+
+/* Với các màn hình lớn hơn 1200px thì chỉ hiển thị trong khoản 1200px, 
+   với hàm max-width cho phép hiển thị trong khoảng từ điểm xác định về điểm 0px */
+.grid{
+    width: 1228px;
+    max-width: 100%;
+    margin: 0 auto;
+    /* background-color: rgba(0, 0, 0, 0.09); */
+}
+
+
+.grid__full--width{
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right:-5px;
+}
+
+.auth--form__controls {
+    margin-top: 80px;
+}
+.grid__column--1{
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.grid__column--2{
+    width: calc((100%)/2);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.grid__column--3{
+    width: calc(((100%)/3));
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.grid__column--3--2 {
+    width: calc(((100%)/3)*2);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.grid__column--4{
+    width: calc((100%)/4);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.grid__column--5 {
+    width: calc(((100%)/5));
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.grid__column--6 {
+    width: calc(((100%)/6));
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.grid__column--6__2 {
+    width: calc(((100%)/6)*2);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.grid__column--8 {
+    width: calc(((100%)/8));
+    
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.grid__column--8__2 {
+    width: calc(((100%)/8)*2);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.grid__column--10{
+    width: calc(((100%)/12)*10);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/* ----------------------------- */
+/* css js cho phép khối hiển thị */
+.on--display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.off--display{
+    display: none;
+}
+/* ----------------------------- */
+
+/* ---------------------------- */
+/* -------button style--------- */
+.btn {
+    min-width: 142px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    color: var(--text--color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+}
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.btn.btn--primary {
+    background: var(--primary--color);
+    color: var(--white--color);
+}
+
+/* dùng để khóa nút chức năng */
+.btn.btn--disabled {
+    cursor: default;
+    color: #333;
+    background-color: #727272;
+}
+.btn--size--s {
+    height: 32px;
+}

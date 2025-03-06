@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <!-- xà ngang -->
+    <div class="top--line"></div>
+    <!-- đường dẫn -->
+    
+    <!-- header -->
+    <header class="header">
+        <!-- header__mobile -->
+        <div class="header__Mobile">
+            <div class="grid">
+                <div class="grid__row">
+                    
+                    <div class="header__Mobile__menu">
+                        <div class="barsPart">
+                            <div class="line line_1"></div>
+                            <div class="line line_2"></div>
+                            <div class="line line_3"></div>
+                        </div>
+                    </div>
+    
+                    <div class="header__Mobile__logoArea">
+                        <a class="logoPart" href="./index.html">
+                            <img alt="UB" src="https://ub.edu.vn/uploads/ubahaiquan/logo-top-white@3x.png"></a>
+                    </div>
+    
+                    <div class="header__Mobile__searchArea">
+                        <div class="searchClickItem">
+                            <i aria-hidden="true" class="fa fa-search"></i>
+                            <i aria-hidden="true" class="fa-solid fa-rectangle-xmark"></i>
+                           
+                        </div>
+                        <div class="header__Mobile__searchDropDown">
+                            <form action="/search" class="searchBlock_1 search" method="GET" data-hs-cf-bound="true">
+                                <div class="form-group">
+                                    <input class="searchBlock_1__form-control" name="key" placeholder="Tìm kiếm sản phẩm..." type="text">
+                                </div>
+                                <i aria-hidden="true" class="searchBlock_1__icon__search fa fa-search"></i>
+                            </form>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <!-- header--top -->
+        <div class="header__top">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="header__top--nav">
+                        <div class="header__top--nav__list">
+
+                            <!-- Thẻ 1 -->
+                            <div class="header__top--nav__list--item">
+                                <a href="#" class="header__top--nav__list--item__block">
+                                    <img alt="UB" class="header__nav--item--logo"
+                                        src="https://uba.vn/storage/0u/mw/0umws7u3z9b5wcmfesy0j79fu180_6d2joe1zfn6xzudxhmrh6rm9nwcz_logoub11.png">
+                                </a>
+
+                                <i class="header__nav--item--contact fa-solid fa-phone-volume">
+                                    <!-- <a href="tel:+0982.873.883"></a> -->
+                                </i>
+                                
+                                <a href="tel:+00000000" class="header__top--nav__list--item__name">
+                                    Tư vấn khoá học: 028.3880.8858 hoặc 0982.873.883
+                                </a>
+                            </div>
+
+                            <!-- Thẻ 2 -->
+                            <div class="header__top--nav__list--item">
+                                <form action="/search" method="GET" class="header__nav--search">
+                                    <div class="header__nav--search__input">
+                                        <input type="text" id="header__nav--search__input--item" name="search--pr"
+                                            required="" minlength="1" maxlength="1000" size="10"
+                                            placeholder="Search...">
+                                    </div>
+                                    <i class="header__nav--search__icon fa-solid fa-magnifying-glass"></i>
+                                </form>
+                                <button class="header__nav--btn">Đăng ký tư vấn</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header--nav -->
+        <div class="header__nav">
+            <div class="grid">
+                <div class="header__nav__menu">
+                    <ul class="header__nav__menu__list ">
+                        <li class="header__nav__menu__item">
+                            <a href="#" class="header__nav__menu__item__link">Công nghệ</a>
+                        </li>
+                        <li class="header__nav__menu__item">
+                            <a href="#" class="header__nav__menu__item__link">FAQ Luyện thi Ngân Hàng</a>
+                        </li>
+                        <li class="header__nav__menu__item">
+                            <a href="#" class="header__nav__menu__item__link">FAQ Luyện thi Công Chức - Viên Chức</a>
+                        </li>
+                        <li class="header__nav__menu__item">
+                            <a href="#" class="header__nav__menu__item__link">FAQ đầu tư tài chính</a>
+                        </li>
+                        <li class="header__nav__menu__item">
+                            <a href="#" class="header__nav__menu__item__link">FAQ Phân tích dữ liệu</a>
+                        </li>
+                        <li class="header__nav__menu__item">
+                            <a href="#" class="header__nav__menu__item__link">Bảng học phí</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- header__menu -->
+        <div class="header__menu">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="header__menu__nav">
+                        <ul class="header__menu__nav__list">
+                            <li class="header__menu__nav__item">
+                                <a href="#" class="header__menu__nav__item--link">Về chúng tôi</a>
+                            </li>
+                            <li class="header__menu__nav__item">
+                                <a href="#" class="header__menu__nav__item--link">Khóa học</a>
+                                <div class="header__menu__nav__item--blockCate">
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#course">Về chúng tôi</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Công nghệ</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Thông tin thanh toán</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__menu__nav__item">
+                                <a href="#" class="header__menu__nav__item--link">Chia sẻ kiến thức</a>
+                                <div class="header__menu__nav__item--blockCate">
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Học làm nghề ngân hàng</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Luyện thi ngân hàng</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Luyện thi công chức</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__menu__nav__item">
+                                <a href="#" class="header__menu__nav__item--link">Tài liệu</a>
+                                <div class="header__menu__nav__item--blockCate">
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Ngân hàng</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">công chức - Viên chức</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Đề thi ngân hàng</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Đề thi công chức</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__menu__nav__item">
+                                <a href="#" class="header__menu__nav__item--link">Học viên thành công</a>
+                                <div class="header__menu__nav__item--blockCate">
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Ngân hàng</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">công chức - Viên chức</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Đề thi ngân hàng</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Đề thi công chức</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__menu__nav__item">
+                                <a href="#" class="header__menu__nav__item--link">Diễn đàn cộng đồng</a>
+                                <div class="header__menu__nav__item--blockCate">
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Ngân hàng</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">công chức - Viên chức</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Đề thi ngân hàng</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Đề thi công chức</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__menu__nav__item">
+                                <a href="#" class="header__menu__nav__item--link">Thông tin tuyển dụng</a>
+                                <div class="header__menu__nav__item--blockCate">
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Vietcombank</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">BIDV</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Vietinbank</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Agribank</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Ngân Hàng Nhà Nước</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Ngân Hàng Chính Sách Xã Hội</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Ngân Hàng TMCP</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__menu__nav__item">
+                                <a href="#" class="header__menu__nav__item--link">Tin tức - Báo chí</a>
+                                <div class="header__menu__nav__item--blockCate">
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Tin nội bộ</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Sự kiện nổi bậc</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Thông báo tuyển sinh</a>
+                                    </div>
+                                    <div class="menuItem_2">
+                                        <a class="linkLevel_2" href="#">Câu chuyện học viên</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- content -->
+    <main class="container">
+        <!-- slider -->
+        <div class="slider">
+            <div class="slider__img">
+                <img src="https://uba.vn/storage/ot/i4/oti4lrhksfkkc5thqd8lu9jqqomz_20241104-142429.jpg" alt=""
+                    style="width: 100%">
+            </div>
+        </div>
+        <!-- column__4 -->
+        <div class="intro small --backgrou_color--block--1">
+            <div class="grid">
+                <div class="grid__row">
+                    <!-- Tiêu đề -->
+                    <div class="small__title">
+                        <h1 class="small__title__list">ub academy - thành viên hiệp hội ngân hàng việt nam</h1>
+                    </div>
+                    <!-- khối nhỏ -->
+                    <div class="grid__column--4">
+                        <div class="small__block">
+                            <div class="small__block__content">
+                                <div class="small__block__content__img">
+                                    <img src="https://uba.vn/uploads/img/item_11.svg" alt="image__smallblock"
+                                        class="small__block__content__img--icon">
+                                </div>
+                            </div>
+                            <p class="small__block__number">11+</p>
+                            <p class="small__block__position">Học viên</p>
+                            <p class="small__block__annotation">11 năm kinh nghiệm: Xây dựng cộng đồng, đào tạo và bồi
+                                dưỡng kiến thức nghiệp vụ nhằm góp phần cung ứng và nâng cao chất lượng nguồn nhân lực
+                                lĩnh vực Tài chính - Ngân hàng và Hành chính công</p>
+                        </div>
+                    </div>
+                    <div class="grid__column--4">
+                        <div class="small__block">
+                            <div class="small__block__content">
+                                <div class="small__block__content__img">
+                                    <img src="https://uba.vn/uploads/img/item_12.svg" alt="image__smallblock"
+                                        class="small__block__content__img--icon">
+                                </div>
+                            </div>
+                            <p class="small__block__number">30.000+</p>
+                            <p class="small__block__position">Học viên</p>
+                            <p class="small__block__annotation">Trải nghiệm dịch vụ đào tạo theo mô hình Quốc tế để nâng
+                                cao kiến thức, củng cố thương hiệu cá nhân và tự do trong việc lựa chọn nghề nghiệp yêu
+                                thích</p>
+                        </div>
+                    </div>
+                    <div class="grid__column--4">
+                        <div class="small__block">
+                            <div class="small__block__content">
+                                <div class="small__block__content__img">
+                                    <img src="https://uba.vn/uploads/img/item_3.svg" alt="image__smallblock"
+                                        class="small__block__content__img--icon">
+                                </div>
+                            </div>
+                            <p class="small__block__number">30+</p>
+                            <p class="small__block__position">Giảng viên, Chuyên gia</p>
+                            <p class="small__block__annotation">Nhiều năm kinh nghiệm giảng dạy tại các trường Đại học
+                                top đầu cả nước, nắm giữ học hàm học vị Tiến sỹ/Phó giáo sư trở lên và/hoặc có nhiều
+                                năm kinh nghiệm làm việc trong bộ máy Nhà nước, Ngân hàng</p>
+                        </div>
+                    </div>
+                    <div class="grid__column--4">
+                        <div class="small__block">
+                            <div class="small__block__content">
+                                <div class="small__block__content__img">
+                                    <img src="https://uba.vn/uploads/img/item_22.svg" alt="image__smallblock"
+                                        class="small__block__content__img--icon">
+                                </div>
+                            </div>
+                            <p class="small__block__number">50+</p>
+                            <p class="small__block__position">Đối tác</p>
+                            <p class="small__block__annotation">Là các trường đại học, ngân hàng, cơ quan, doanh nghiệp
+                                và đơn vị báo chí truyền thông lớn, uy tín tại Việt Nam</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- column__3 -->
+        <div class="exp small">
+            <div class="grid">
+                <div class="grid__row">
+                    <!-- Tiêu đề -->
+                    <div class="small__title">
+                        <h1 class="small__title__list">thành công trong sự nghiệp cùng ub academy</h1>
+                        <p class="small__title__item">UB Academy luôn nỗ lực không ngừng trong việc rút ngắn khoảng cách
+                            giữa nội dung đào tạo và nhu cầu thực tế, mục tiêu học tập của học viên thông qua</p>
+                    </div>
+                    <!-- khối nhỏ -->
+                    <div class="grid__column--3">
+                        <div class="small__block --backgrou_color--block--1 --padding">
+                            <div class="small__block__title">
+                                <i class="small__block__title__icon fa-solid fa-graduation-cap"></i>
+                                <p class="small__block__title__position">Học viên</p>
+                            </div>
+                            <p class="small__block__annotation">Cung cấp kiến thức chuyên môn và kỹ năng thông qua các
+                                khoá học cam kết đào tạo từ mất gốc với mô hình học tập kết hợp, phương pháp đào tạo
+                                chuyên biệt, lấy học viên làm trọng tâm, bám sát thực tiễn để đảm bảo có tính ứng dụng,
+                                vận dụng cao và được giảng dạy bởi đội ngũ giảng viên là chuyên gia, nhiều năm kinh
+                                nghiệm</p>
+                        </div>
+                    </div>
+                    <div class="grid__column--3">
+                        <div class="small__block --backgrou_color--block--1 --padding">
+                            <div class="small__block__title">
+                                <i class="small__block__title__icon fa-solid fa-people-line"></i>
+                                <p class="small__block__title__position">Cộng đồng</p>
+                            </div>
+                            <p class="small__block__annotation">Cơ hội mở rộng network, trao đổi, chia sẻ thông tin, góc
+                                nhìn, quan điểm về những vấn đề trong ngành Ngân hàng và Công chức - Viên chức cũng như
+                                kinh nghiệm làm việc để phá bỏ mọi rào cản trong quá trình tìm hiểu thông tin</p>
+                        </div>
+                    </div>
+                    <div class="grid__column--3">
+                        <div class="small__block --backgrou_color--block--1 --padding">
+                            <div class="small__block__title">
+                                <i class="small__block__title__icon fa-solid fa-newspaper"></i>
+                                <p class="small__block__title__position">Học viên</p>
+                            </div>
+                            <p class="small__block__annotation">Cung cấp kiến thức chuyên môn và kỹ năng thông qua các
+                                khoá học cam kết đào tạo từ mất gốc với mô hình học tập kết hợp, phương pháp đào tạo
+                                chuyên biệt, lấy học viên làm trọng tâm, bám sát thực tiễn để đảm bảo có tính ứng dụng,
+                                vận dụng cao và được giảng dạy bởi đội ngũ giảng viên là chuyên gia, nhiều năm kinh
+                                nghiệm</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- column__2 -->
+        <div class="small --backgrou_color--block--1">
+            <div class="grid">
+                <div class="grid__row">
+                    <!-- Tiêu đề -->
+                    <div class="small__title">
+                        <h1 class="small__title__list">áp dụng công nghệ trong hoạt động đào tạo</h1>
+                    </div>
+                    <!-- khối nhỏ -->
+                    <div class="grid__column--2">
+                        <div class="small__block ">
+                            <div class="small__block__img">
+                                <img src="https://uba.vn/uploads/img/img_39.jpg" alt="" class="small__block__img__list">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2">
+                        <div class="small__block ">
+                            <p class="small__block__annotation icon__check">Cơ hội mở rộng network, trao đổi, chia sẻ
+                                thông tin, góc nhìn, quan điểm về những vấn đề trong ngành Ngân hàng và Công chức - Viên
+                                chức cũng như kinh nghiệm làm việc để phá bỏ mọi rào cản trong quá trình tìm hiểu thông
+                                tin.</p>
+                            <p class="small__block__annotation icon__check">Linh hoạt, chủ động trong quá trình học.</p>
+                            <p class="small__block__annotation icon__check">Tiết kiệm thời gian, phá bỏ mọi rào cản về
+                                địa lý.</p>
+                            <p class="small__block__annotation icon__check">Kết quả học tập đạt hiệu quả tối đa.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- column__3__2 -->
+        <div class="course small" id="course">
+            <div class="grid">
+                <div class="grid__row ">
+                    <!-- Tiêu đề -->
+
+                    <!-- cột 1 -->
+                    <div class="grid__column--3">
+                        <div class="small__block">
+                            <div class="small__title">
+                                <h1 class="small__title__list ">khóa học tiêu biểu</h1>
+                            </div>
+                            <div class="small__block ">
+                                <p class="small__block__annotation icon__check">Với 13 năm kinh nghiệm đào tạo, UB
+                                    Academy sẵn sàng và tự tin đồng hành cùng bạn trên hành trình xây dựng sự nghiệp
+                                    thành công.</p>
+                                <p class="small__block__annotation icon__check">Phá bỏ mọi rào cản, tự do lựa chọn nơi
+                                    phát triển sự nghiệp</p>
+                                <p class="small__block__annotation icon__check">Được công nhận năng lực, đạt thành tựu
+                                    xuất sắc trong công việc</p>
+                                <p class="small__block__annotation icon__check">Tự tin tạo ra sức ảnh hưởng, trở thành
+                                    chuyên gia trong lĩnh vực bạn theo đuổi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cột 2 -->
+                    <div class="grid__column--3--2">
+                        <div class="grid__row ">
+                            <!-- Cột 1 trong hàng -->
+                            <div class="grid__column--2">
+                                <!-- thẻ chứa block khóa học -->
+                                <!-- ==> Note: thẻ này cần đổ bóng -->
+                                <a href="#" class="course__block">
+                                    <!-- ảnh khóa học -->
+                                    <div class="course__block__img">
+                                        <img class="course__block__img__list"
+                                            src="https://uba.vn/storage/1h/e9/1he9ocufeuvbsdx63zoipwn0n4he_20241104-142429.jpg"
+                                            alt="course__img">
+                                    </div>
+                                    <!-- text mô tả -->
+                                    <div class="course__block__text">
+                                        <p class="course__block__text__nameCourse small__title__item">Khóa học Luyện thi
+                                            Ngân hàng</p>
+                                        <div class="course__block__text__btnViewMore">
+                                            <p class="course__block__text__btnViewMore__btnType btn">Xem thêm &gt;</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Cột 2 trong hàng -->
+                            <div class="grid__column--2">
+                                <!-- thẻ chứa block khóa học -->
+                                <!-- ==> Note: thẻ này cần đổ bóng -->
+                                <a href="#" class="course__block">
+                                    <!-- ảnh khóa học -->
+                                    <div class="course__block__img grid__full--width">
+                                        <img class="course__block__img__list grid__full--width"
+                                            src="https://uba.vn/storage/1h/e9/1he9ocufeuvbsdx63zoipwn0n4he_20241104-142429.jpg"
+                                            alt="course__img">
+                                    </div>
+                                    <!-- text mô tả -->
+                                    <div class="course__block__text">
+                                        <p class="course__block__text__nameCourse small__title__item">Khóa học Luyện thi
+                                            Ngân hàng</p>
+                                        <div class="course__block__text__btnViewMore">
+                                            <p class="course__block__text__btnViewMore__btnType btn">Xem thêm &gt;</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- grid__Featurnews__content -->
+        <div class="featurnews small --backgrou_color--block--1">
+            <div class="grid">
+                <div class="grid__row">
+                    <!-- Tiêu đề -->
+                    <div class="small__title">
+                        <h1 class="small__title__list">tổng hợp cập nhật thông tin tiêu biểu</h1>
+                    </div>
+                    <!-- khối nhỏ -->
+                    <div class="grid__column--3">
+                        <!-- thẻ chứa block khóa học -->
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <a href="#" class="featurnews__small course__block">
+                            <!-- ảnh khóa học -->
+                            <div class="featurnews__img course__block__img">
+                                <img class="Featurnews__img__item course__block__img__list"
+                                    src="https://uba.vn/storage/1h/e9/1he9ocufeuvbsdx63zoipwn0n4he_20241104-142429.jpg"
+                                    alt="course__img">
+                            </div>
+                            <!-- text mô tả -->
+                            <div class="featurnews__content course__block__text">
+                                <p class="featurnews__content__item__time course__block__text__time">19 Feb, 2022</p>
+                                <p
+                                    class="featurnews__content__item__namecourse course__block__text__nameCourse small__title__item ">
+                                    Khóa học Luyện thi Ngân hàng</p>
+                                <div class="featurnews__content__item course__block__text__btnViewMore">
+                                    <p class="course__block__text__btnViewMore__btnType btn">Xem thêm &gt;</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid__column--3">
+                        <!-- thẻ chứa block khóa học -->
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <a href="#" class="featurnews__small course__block">
+                            <!-- ảnh khóa học -->
+                            <div class="featurnews__img course__block__img">
+                                <img class="Featurnews__img__item course__block__img__list"
+                                    src="https://uba.vn/storage/1h/e9/1he9ocufeuvbsdx63zoipwn0n4he_20241104-142429.jpg"
+                                    alt="course__img">
+                            </div>
+                            <!-- text mô tả -->
+                            <div class="featurnews__content course__block__text">
+                                <p class="featurnews__content__item__time course__block__text__time">19 Feb, 2022</p>
+                                <p
+                                    class="featurnews__content__item__namecourse course__block__text__nameCourse small__title__item ">
+                                    Khóa học Luyện thi Ngân hàng</p>
+                                <div class="featurnews__content__item course__block__text__btnViewMore">
+                                    <p class="course__block__text__btnViewMore__btnType btn">Xem thêm &gt;</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid__column--3">
+                        <!-- thẻ chứa block khóa học -->
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <a href="#" class="featurnews__small course__block">
+                            <!-- ảnh khóa học -->
+                            <div class="featurnews__img course__block__img">
+                                <img class="Featurnews__img__item course__block__img__list"
+                                    src="https://uba.vn/storage/1h/e9/1he9ocufeuvbsdx63zoipwn0n4he_20241104-142429.jpg"
+                                    alt="course__img">
+                            </div>
+                            <!-- text mô tả -->
+                            <div class="featurnews__content course__block__text">
+                                <p class="featurnews__content__item__time course__block__text__time">19 Feb, 2022</p>
+                                <p
+                                    class="featurnews__content__item__namecourse course__block__text__nameCourse small__title__item ">
+                                    Khóa học Luyện thi Ngân hàng</p>
+                                <div class="featurnews__content__item course__block__text__btnViewMore">
+                                    <p class="course__block__text__btnViewMore__btnType btn">Xem thêm &gt;</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- grid__column__2 -->
+        <div class="small consultation--infor">
+            <div class="consulation--infor__content">
+                <div class="grid">
+                    <div class="grid__row">
+                        <!-- khối nhỏ 1 -->
+                        <div class="grid__column--2">
+                            <div class="small__block">
+                                <div class="small__title consultation--infor__title">
+                                    <h1 class="small__title__list consultation--infor__title__list">đăng ký tư vấn miễn phí</h1>
+                                    <h1 class="small__title__list consultation--infor__title__list">khóa học phù hợp với bạn</h1>
+                                </div>
+                                <div class="small__block ">
+                                    <p class="small__block__annotation consultation--infor__title__list icon__check">Đồng
+                                        hành cùng hàng ngàn học viên trở nên tự tin và vượt trội,
+                                        sẵn sàng nắm bắt và chinh phục thành công những cơ hội nghề nghiệp tốt nhất bằng bản
+                                        lĩnh vững vàng,
+                                        chuyên môn chắc chắn và kỹ năng thuần thục sau đào tạo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Khối nhỏ 2 -->
+                        <div class="grid__column--2">
+                            <div class="small__block ">
+                                <div class="consultation--infor__form">
+                                    <form action="" class="consultation--infor__form__list">
+                                        <div class="consultation--infor__form__item__title">
+                                            <h1 class="consultation--infor__form__item__title__1">đăng ký tư vấn khóa học
+                                                miễn phí</h1>
+                                        </div>
+                                        <div class="consultation--infor__form__input">
+                                            <div class="consultation--infor__form__input__item">
+                                                <input type="text" name="search--pr" required="" minlength="1"
+                                                    maxlength="1000" size="10" placeholder="Họ và tên *"
+                                                    class="consultation--infor__form__input__item__1">
+                                                <p class="consultation--infor__form__text__item__1">Họ và tên *</p>
+                                            </div>
+                                            <div class="consultation--infor__form__input__item">
+                                                <input type="email" name="search--pr" required="" minlength="1"
+                                                    maxlength="1000" size="10" placeholder="Email *"
+                                                    class="consultation--infor__form__input__item__1">
+                                                <p class="consultation--infor__form__text__item__1">Email *</p>
+                                            </div>
+                                            <div class="consultation--infor__form__input__item">
+                                                <input type="text" name="search--pr" required="" minlength="1"
+                                                    maxlength="1000" size="10" placeholder="Khu vực *"
+                                                    class="consultation--infor__form__input__item__1">
+                                                <p class="consultation--infor__form__text__item__1">Khu vực *</p>
+                                            </div>
+                                            <div class="consultation--infor__form__input__item">
+                                                <input type="text" name="search--pr" required="" minlength="1"
+                                                    maxlength="1000" size="10" placeholder="Công việc hiện tại của bạn *"
+                                                    class="consultation--infor__form__input__item__1">
+                                                <p class="consultation--infor__form__text__item__1">Công việc hiện tại của
+                                                    bạn *</p>
+                                            </div>
+                                            <div class="consultation--infor__form__input__item">
+                                                <input type="text" name="search--pr" required="" minlength="1"
+                                                    maxlength="1000" size="10"
+                                                    placeholder="Thông tin ào về khóa học đăng ký *"
+                                                    class="consultation--infor__form__input__item__1">
+                                                <p class="consultation--infor__form__text__item__1">Thông tin nào về khóa
+                                                    học đăng ký *</p>
+                                            </div>
+    
+                                        </div>
+                                        <div class="consultation--infor__form__btn">
+                                            <div class="consultation--infor__form__btn__list btn">
+                                                Đăng ký
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Even grid__column__3 -->
+        <div class="event small">
+            <div class="grid">
+                <div class="grid__row ">
+
+                    <div class="event__title small__title">
+                        <h1 class="event__title__list small__title__list">sự kiện nổi bật sắp tới</h1>
+                    </div>
+                    <!-- Cột 1 -->
+                    <div class="grid__column--3">
+                        <!-- thẻ chứa block khóa học -->
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <a href="#" class="event__block course__block">
+                            <!-- ảnh khóa học -->
+                            <div class="event__block__img course__block__img">
+                                <img class="event__block__img__list course__block__img__list"
+                                    src="https://uba.vn/storage/1h/e9/1he9ocufeuvbsdx63zoipwn0n4he_20241104-142429.jpg"
+                                    alt="course__img">
+                            </div>
+                            <!-- text mô tả -->
+                            <div class="event__block__text course__block__text">
+                                <p
+                                    class="event__block__text__nameEvent course__block__text__nameCourse small__title__item">
+                                    Khóa học Luyện thi Ngân hàng</p>
+                                <div class="event__block__text__btnViewMore course__block__text__btnViewMore">
+                                    <button
+                                        class="event__block__text__btnViewMore__btnType course__block__text__btnViewMore__btnType btn">Xem
+                                        thêm &gt;</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Cột 2 trong hàng -->
+                    <div class="grid__column--3">
+                        <!-- thẻ chứa block khóa học -->
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <a href="#" class="event__block course__block">
+                            <!-- ảnh khóa học -->
+                            <div class="event__block__img course__block__img">
+                                <img class="event__block__img__list course__block__img__list"
+                                    src="https://uba.vn/storage/1h/e9/1he9ocufeuvbsdx63zoipwn0n4he_20241104-142429.jpg"
+                                    alt="course__img">
+                            </div>
+                            <!-- text mô tả -->
+                            <div class="event__block__text course__block__text">
+                                <p
+                                    class="event__block__text__nameEvent course__block__text__nameCourse small__title__item">
+                                    Khóa học Luyện thi Ngân hàng</p>
+                                <div class="event__block__text__btnViewMore course__block__text__btnViewMore">
+                                    <p
+                                        class="event__block__text__btnViewMore__btnType course__block__text__btnViewMore__btnType btn">
+                                        Xem thêm &gt;</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Cột 3 trong hàng -->
+                    <div class="grid__column--3">
+                        <!-- thẻ chứa block khóa học -->
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <a href="#" class="event__block course__block">
+                            <!-- ảnh khóa học -->
+                            <div class="event__block__img course__block__img">
+                                <img class="event__block__img__list course__block__img__list"
+                                    src="https://uba.vn/storage/1h/e9/1he9ocufeuvbsdx63zoipwn0n4he_20241104-142429.jpg"
+                                    alt="course__img">
+                            </div>
+                            <!-- text mô tả -->
+                            <div class="event__block__text course__block__text">
+                                <p
+                                    class="event__block__text__nameEvent course__block__text__nameCourse small__title__item">
+                                    Khóa học Luyện thi Ngân hàng</p>
+                                <div class="event__block__text__btnViewMore course__block__text__btnViewMore">
+                                    <p
+                                        class="event__block__text__btnViewMore__btnType course__block__text__btnViewMore__btnType btn">
+                                        Xem thêm &gt;</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- feel -->
+        <div class="feel small --backgrou_color--block--1">
+            <div class="grid">
+                <div class="grid__row ">
+
+                    <div class="event__title small__title">
+                        <h1 class="event__title__list small__title__list">sự kiện nổi bật sắp tới</h1>
+                    </div>
+                    <!-- Cột 1 -->
+                    <div class="grid__column--3">
+                        <!-- thẻ chứa block khóa học -->
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div class="feel__block course__block">
+                            <!-- ảnh khóa học -->
+                            <div class="feel__block__img course__block__img">
+                                <img class="feel__block__img__list course__block__img__list"
+                                    src="https://uba.vn/uploads/feedback-home/1.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 2 trong hàng -->
+                    <div class="grid__column--3">
+                        <!-- thẻ chứa block khóa học -->
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div class="feel__block course__block">
+                            <!-- ảnh khóa học -->
+                            <div class="feel__block__img course__block__img">
+                                <img class="feel__block__img__list course__block__img__list"
+                                    src="https://uba.vn/uploads/feedback-home/1.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 3 trong hàng -->
+                    <div class="grid__column--3">
+                        <!-- thẻ chứa block khóa học -->
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div class="feel__block course__block">
+                            <!-- ảnh khóa học -->
+                            <div class="feel__block__img course__block__img">
+                                <img class="feel__block__img__list course__block__img__list"
+                                    src="https://uba.vn/uploads/feedback-home/1.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- News--media column__2 -->
+        <div class="news small --backgrou_color--block--1">
+            <div class="grid">
+                <div class="grid__row ">
+                    <!-- Tiêu đề -->
+                    <div class="news__title small__title">
+                        <h1 class="news__title__list small__title__list ">Báo chí nói gì về chúng tôi</h1>
+                    </div>
+                    <!-- Cột 1 trong hàng -->
+                    <div class="grid__column--2">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <a href="#" class="news__block course__block">
+                            <!-- ảnh khóa học -->
+                            <div class="news__block__img course__block__img">
+                                <img class="news__block__img__list grid__full--width"
+                                    src="https://uba.vn/storage/1h/e9/1he9ocufeuvbsdx63zoipwn0n4he_20241104-142429.jpg"
+                                    alt="course__img">
+                            </div>
+                            <!-- text mô tả -->
+                            <div class="news__block__text course__block__text">
+                                <p class="news__block__text__name course__block__text__nameCourse small__title__item">
+                                    Khóa học Luyện thi Ngân hàng</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Cột 2 trong hàng -->
+                    <div class="grid__column--2">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <a href="#" class="news__block course__block">
+                            <!-- ảnh khóa học -->
+                            <div class="news__block__img course__block__img">
+                                <img class="news__block__img__list grid__full--width"
+                                    src="https://uba.vn/storage/1h/e9/1he9ocufeuvbsdx63zoipwn0n4he_20241104-142429.jpg"
+                                    alt="course__img">
+                            </div>
+                            <!-- text mô tả -->
+                            <div class="news__block__text course__block__text">
+                                <p class="news__block__text__name course__block__text__nameCourse small__title__item">
+                                    Khóa học Luyện thi Ngân hàng</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- partner column__8 -->
+        <div class="partner small">
+            <div class="grid">
+                <div class="partner__title small__title">
+                    <h1 class="news__title__list small__title__list ">khách hàng - đối tác tiêu biểu</h1>
+                </div>
+                <div class="grid__row ">
+                    <!-- Cột 1 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img course__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="https://ub.edu.vn/uploads/img/logo_cus_1.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 2 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img course__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="https://ub.edu.vn/uploads/img/logo_cus_2.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 3 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img course__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="https://ub.edu.vn/uploads/img/logo_cus_3.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 4 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img course__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="https://ub.edu.vn/uploads/img/logo_cus_4.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 5 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img course__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="https://ub.edu.vn/uploads/img/logo_cus_5.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 6 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img course__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="https://ub.edu.vn/uploads/img/logo_cus_6.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 7 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img course__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="https://ub.edu.vn/uploads/img/logo_cus_7.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 8 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img course__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="https://ub.edu.vn/uploads/img/logo_cus_8.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 9 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img course__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="https://ub.edu.vn/uploads/img/logo_cus_9.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 10 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img course__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="https://ub.edu.vn/uploads/img/logo_cus_10.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 11 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img course__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="https://ub.edu.vn/uploads/img/logo_cus_11.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 12 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img course__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="https://ub.edu.vn/uploads/img/logo_cus_12.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 13 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img course__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="https://ub.edu.vn/uploads/img/logo_cus_13.png" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 14 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img course__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="https://ub.edu.vn/uploads/img/logo_cus_14.jpg" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 15 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img course__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="https://upload.wikimedia.org/wikipedia/vi/e/e5/Logo-Ngan_hang_Phuong_Dong.png"
+                                    alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cột 16 trong hàng -->
+                    <div class="grid__column--8">
+                        <!-- ==> Note: thẻ này cần đổ bóng -->
+                        <div href="#" class="partner__block">
+                            <!-- ảnh khóa học -->
+                            <div class="partner__block__img">
+                                <img class="partner__block__img__list grid__full--width"
+                                    src="	https://interbra.vn/public/DATA/2022/4-2022-25551.jpg" alt="course__img">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__block small">
+            <div class="grid">
+                <div class="grid__row">
+
+                    <!-- footer__column_6_2 -->
+                    <div class="grid__column--8__2">
+                        <a href="#" class="footer__block__logo">
+                            <img class="footer__block__logo__img" alt="UB"
+                                src="https://ub.edu.vn/uploads/img/img_16a.png">
+                        </a>
+                        <div class="footer__block__social">
+                            <div class="footer__block__social__list">
+                                <a class="footer__block__social__item" href="https://www.facebook.com/ubvietnam"
+                                    target="_blank" title="facebook">
+                                    <div class="footer__block__social__item__icon">
+                                        <img class="footer__block__social__item__icon__img" alt="facebook"
+                                            src="https://ub.edu.vn/uploads/img/facebook_item.svg">
+                                    </div>
+                                </a>
+                                <a class="footer__block__social__item" href="https://www.youtube.com/c/UBAcademyOnline"
+                                    target="_blank" title="youtube">
+                                    <div class="footer__block__social__item__icon">
+                                        <img class="footer__block__social__item__icon__img" alt="youtube"
+                                            src="https://ub.edu.vn/uploads/img/youtube_item.svg">
+                                    </div>
+                                </a>
+                                <a class="footer__block__social__item" href="https://www.tiktok.com/@luyenthinganhang"
+                                    target="_blank" title="tiktok">
+                                    <div class="footer__block__social__item__icon">
+                                        <img class="footer__block__social__item__icon__img" alt="tiktok"
+                                            src="https://ub.edu.vn/uploads/img/tiktok.png">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid__column--8__2">
+                        <p class="footer__block__title">thông tin liên hệ</p>
+
+                        <div class="footer__block__loca local">
+                            <p class="footer__block__loca__text bold">Trụ sở chính:</p>
+                            <p class="footer__block__loca__text">Số 16 Văn Cao, Phường Liễu Giai, Quận Ba Đình, TP Hà
+                                Nội</p>
+                        </div>
+                        <div class="footer__block__loca local">
+                            <p class="footer__block__loca__text bold">Văn phòng tại TP. Hồ Chí Minh:</p>
+                            <p class="footer__block__loca__text">Tầng 5 - 90 Lê Văn Duyệt, Phường 1, Quận Bình Thạnh, TP
+                                Hồ Chí Minh</p>
+                        </div>
+                    </div>
+
+                    <div class="grid__column--8__2 b">
+                        <p class="footer__block__title">thông tin hỗ trợ</p>
+
+                        <div class="footer__block__loca hotline">
+                            <p class="footer__block__loca__text">Tư vấn khóa học</p>
+                            <p class="footer__block__loca__text">
+                                <a href="tel:+8497.5151.777" style="text-decoration: none;color: #fff;">+8497.5151.777</a>
+                            </p>
+                            <p class="footer__block__loca__text">Chăm sóc khách hàng</p>
+                            <p class="footer__block__loca__text">
+                                <a href="tel:+84976.073.060" style="text-decoration: none;color: #fff;">+84976.073.060</a>
+                            </p>
+                            <p class="footer__block__loca__text">
+                                <a href="tel:+84566.728.728" style="text-decoration: none;color: #fff;">+84566.728.728</a>
+                            </p>
+                            <p class="footer__block__loca__text"></p>
+                        </div>
+                    </div>
+
+                    <div class="grid__column--8__2">
+                        <p class="footer__block__title">về chúng tôi</p>
+
+                        <div class="footer__block__loca mytype">
+                            <a href="#" class="footer__block__loca__text">FAQ</a>
+                            <a href="#" class="footer__block__loca__text">Chất lượng dịch vụ</a>
+                            <a href="#" class="footer__block__loca__text">Dịch vụ học viên</a>
+                            <a href="#" class="footer__block__loca__text">Học viên tiêu biểu</a>
+                            <a href="#" class="footer__block__loca__text">Thông tin tuyển dụng</a>
+                            <a href="#" class="footer__block__loca__text">Diễn đàn</a>
+                            <a href="#" class="footer__block__loca__text">Tuyển dụng giảng viên</a>
+                            <a href="#" class="footer__block__loca__text">Tuyển dụng nội bộ</a>
+                            <a href="#" class="footer__block__loca__text">Công nghệ</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- file js -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

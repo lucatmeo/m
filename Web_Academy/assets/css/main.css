@@ -1,0 +1,777 @@
+.top__line {
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+.header__Mobile {
+    display: none;
+}
+
+/* ----------------------- header--top --------------------- */
+header {
+    position: relative;
+}
+.header__top--nav {
+    width: 100%;
+    padding: 10px 0;
+    /* background-color: red; */
+}
+
+.header__top--nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 15px; */
+    box-sizing: border-box;
+}
+
+.header__top--nav__list--item {
+    display: inline-flex;
+    gap: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.header__top--nav__list--item__block {
+    position: relative;
+}
+
+.header__top--nav__list--item__name {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mau_chu_dao_1);
+    font-size: 1.6rem;
+    height: 35px;
+    text-decoration: none;
+}
+
+.header__nav--item--logo {
+    width: 150px;
+}
+.header__nav--item--contact.fa-solid {
+    font-size: 1.6rem;
+    color: var(--mau_chu_dao_1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__nav--search {
+    font-size: 1.9rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transform: 0.3s;
+}
+
+.header__nav--search__input {
+    border: 1px solid #dcdcdc;
+    border-right: none;
+    height: 35px;
+    transition: 0.3s;
+    margin-bottom: 0;
+    width: 204px;
+    /* width: 16.6123%; */
+}
+
+#header__nav--search__input--item {
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.header__nav--search__icon {
+    background-color: var(--mau_chu_dao_1);
+    color: #ffffff;
+    border-left: none;
+    font-size: 1.9rem;
+    padding: 7px 15px 7px 13px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.header__nav--btn {
+    border: 1px solid var(--mau_chu_dao_1);
+    color: var(--mau_chu_dao_1);
+    height: 35px;
+    padding: 5px 20px;
+    border-radius: 7px;
+    font-size: 1.4rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* ------------------- end header--top --------------------- */
+
+
+/* --------------------------------------------------------- */
+/* ------------------- Header nav -------------------------- */
+.header__nav {
+    background-color: var(--mau_chu_dao_1);
+}
+
+.header__nav__menu {
+    width: 100%;
+}
+
+.header__nav__menu__list {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+.header__nav__menu__item {
+    display: block;
+    padding: 12px 15px;
+    text-align: center;
+    transition: all 0.3s;
+    /* border-bottom: 2px solid #ccc; */
+
+}
+
+.header__nav__menu__item__link {
+    color: #ffffff;
+    line-height: 1.5;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+    /* padding-right: 25px; */
+}
+
+/* ------------------------ end header--nav ---------------- */
+
+
+
+/* ------------------------ header--menu ------------------- */
+.header__menu {
+    color: #134690;
+    transition: all 2s linear;
+}
+
+.header__menu__nav {
+    width: 100%;
+}
+
+.header__menu__nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu__nav__item {
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+}
+.header__menu__nav__item:hover  {
+    background-color: #b0b0b058;
+    transition: all 0.3s;
+}
+
+.header__menu__nav__item--link {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.header__menu__nav__item--link::before {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: var(--mau_chu_dao_2);
+    position: absolute;
+    top: 95%;
+    transition: 0.3s width;
+    left: 0;
+}
+.header__menu__nav__item:hover .header__menu__nav__item--link::before {
+    width: 100%;
+}
+li:not(:first-child) .header__menu__nav__item--link {
+    padding-right: 25px;
+}
+
+.header__menu li:not(:first-child) .header__menu__nav__item--link::after {
+    content: "\f0d7";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 16px;
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    transform: rotate(90deg);
+    transition: all 0.3s;
+}
+.header__menu li:not(:first-child):hover .header__menu__nav__item--link::after {
+    transform: rotate(0deg);
+    transition: all 0.3s;
+}
+.header__menu__nav__item:hover .header__menu__nav__item--blockCate {
+    display: block;
+}
+
+.header__menu__nav__item--blockCate {
+    position: absolute;
+    top: 104%;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 10px 2px rgba(1, 1, 1, 0.2);
+    display: none;
+    animation: appeared_1 0.3s;
+    min-width: 100%;
+    border-radius: 0 0 5px 5px;
+}
+
+.header__menu__nav__item--blockCate .menuItem_2:hover .linkLevel_2 {
+    background-color: #f5f5f5;
+    color: var(--mau_chu_dao_1);
+}
+
+.header__menu__nav__item--blockCate .linkLevel_2 {
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 10px 15px 8px 10px;
+    border-bottom: 1px dashed #a0a0a0;
+    position: relative;
+    color: #333;
+    line-height: 1.5;
+    font-weight: normal;
+    text-decoration: none;
+    animation: scal linear 0.3s;
+
+    display: block;
+}
+@keyframes scal {
+    from {
+        opacity: 0;
+        transform: translate(-10px, -10px);
+    }
+    to {
+        opacity: 100%;
+        transform: translate(0px, 0px);
+    }
+
+}
+
+
+
+
+
+
+/* --------------------------------- */
+/* ------------ exp ---------------- */
+.small {
+    padding: 80px 0;
+    /* background-color: #f2f2f2; */
+}
+
+.small__title {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.small__block {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.small__title__list {
+    /* font-size: 35px; */
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: var(--mau_chu_dao_1);
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.small__title__item {
+    font-size: 1.8rem;
+    padding-top: 15px;
+}
+
+/* Khối 1: small__block__content */
+.small__block__content {
+    width: 50%;
+    max-width: 140px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.small__block__content__img {
+    background-color: var(--mau_BIDV);
+    padding-bottom: 100%;
+    position: relative;
+    border-radius: 100%;
+}
+
+.small__block__content__img--icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+}
+
+.small__block__number {
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: var(--mau_chu_dao_1);
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.small__block__position {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--mau_chu_dao_1);
+    margin-bottom: 15px;
+}
+
+.small__block__annotation {
+    text-align: justify;
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    color: var(--mau_chu_dao_3);
+    font-weight: normal;
+    font-style: normal;
+    transition: 0.3s;
+    position: relative;
+}
+
+.icon__check:not(:first-child) {
+    padding: 0 0 0 30px;
+}
+
+.icon__check:not(:first-child)::before {
+    content: "\f058";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--mau_chu_dao_2);
+    position: absolute;
+    top: 50%px;
+    left: 0;
+    /* background: red; */
+}
+
+/* Khối 2: ........ */
+.small__block__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.small__block__title__icon {
+    font-size: 40px;
+
+}
+
+.small__block__title__position {
+    padding: 0 0 0 15px;
+    font-size: 1.8rem;
+}
+
+
+/* grid__column__2 */
+.small__block__img {
+    width: 100%;
+}
+
+.small__block__img__list {
+    width: 100%;
+}
+
+
+/* course__block */
+.course__block {
+    display: block;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px 0px #ccc;
+    width: 90%;
+    margin-left: auto;
+}
+
+/* .course__block:first-of-type{
+    margin-left: auto;
+} */
+.course__block__img {
+    border: 2px solid rgba(0, 0, 0, 0.001);
+}
+
+.course__block__img__list {
+    width: 100%;
+}
+
+.course__block__text {
+    padding: 15px;
+
+}
+
+.course__block__text__time {
+    font-size: 1.2rem;
+}
+
+.course__block__text__nameCourse {
+    font-weight: bold;
+    padding: 0;
+    text-decoration: none;
+}
+
+.course__block__text__btnViewMore {
+    margin: 15px 0 0 0;
+}
+
+.course__block__text__btnViewMore__btnType {
+    border: 1px solid var(--mau_chu_dao_1);
+    border-radius: 7px;
+    color: var(--mau_chu_dao_1);
+    font-weight: 400;
+}
+
+/* Featurnews__content */
+.featurnews__small.course__block {
+    width: 95%;
+    margin: auto;
+}
+
+.featurnews__content__item__namecourse {
+    height: 80px;
+    padding: 15px 0 0 0;
+}
+
+/* ------consultation--infor------ */
+.consultation--infor {
+    background: url(https://uba.vn/uploads/img/img_10.webp) no-repeat;
+    background-position: center 0;
+    background-size: cover;
+}
+.consulation--infor__content {
+    --cach: 80px;
+    width: 100%;
+    height: 100%;
+    margin: calc(-1 * var(--cach)) 0;
+    padding: var(--cach) 0;
+    background-color: rgba(14, 118, 188, 0.85);
+}
+.consultation--infor__title {
+    text-align: start;
+}
+
+.consultation--infor__title__list {
+    text-align: start;
+    color: #fff;
+}
+
+.consultation--infor__form {
+    max-width: 500px;
+    padding: 50px 30px;
+    background-color: var(--mau_chu_dao_2);
+    border-radius: 20px;
+    margin-left: auto;
+    box-shadow: 3px 3px 5px 0px rgba(255, 255, 255, 0.5);
+}
+
+.consultation--infor__form__item__title {
+    width: 100%;
+}
+
+.consultation--infor__form__item__title__1 {
+    text-align: center;
+    color: var(--mau_chu_dao_1);
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+.consultation--infor__form__input {
+    padding: 30px 0;
+}
+
+.consultation--infor__form__input__item {
+    position: relative;
+    font-size: 1.6rem;
+    height: 40px;
+}
+
+.consultation--infor__form__input__item:not(:last-child) {
+    position: relative;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.consultation--infor__form__input__item__1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 0 15px;
+    min-height: 27px;
+    font-size: 1.6rem;
+    color: #33475b;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+/* không có tác dụng */
+.consultation--infor__form__text__item__1 {
+    position: absolute;
+    line-height: 100%;
+    height: 16px;
+    top: 35%;
+    bottom: 50%;
+    left: 15px;
+    display: none;
+}
+
+.consultation--infor__form__btn {
+    text-align: center;
+}
+
+.consultation--infor__form__btn__list {
+    border-radius: 6px;
+    background-color: var(--mau_VTB);
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+/* Event column__3 */
+.event__block__text__nameEvent {
+    height: 45px;
+}
+
+
+/* feel column__3 */
+
+
+/* news column__2 */
+.news__block {
+    text-decoration: none;
+    /* width: 80%; */
+}
+
+.news__block.course__block {
+    margin: auto;
+    width: 95%;
+    box-shadow: none;
+}
+
+.news__block__text {
+    width: 100%;
+}
+
+.news__block__text__name {
+    height: 40px;
+}
+
+
+/* partnet column__8 */
+.partner .grid__row {
+    position: relative;
+}
+
+.partner .grid__row::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    right: 0;
+    background-color: white;
+    z-index: 3;
+}
+
+.partner .grid__row::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -1px;
+    background-color: white;
+    z-index: 1;
+}
+
+.partner .grid__column--8 {
+    padding: 0;
+}
+
+.partner__block {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-right: 1px dashed #c8c8c8;
+    border-bottom: 1px dashed #c8c8c8;
+}
+
+.partner__block__img {
+    /* position: relative; */
+    padding: 30% 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.partner__block__img__list {
+    width: 80%;
+    object-fit: contain;
+}
+
+/* ----------- end_Header ------------ */
+/* ----------------------------------- */
+
+/* ----------------------------------- */
+/* ----------- footer ---------------- */
+.footer .grid__row {
+    margin: 0 -15px;
+}
+
+.footer .grid__column--8__2 {
+    padding: 0 15px;
+}
+
+.footer .grid__column--8__2.b {
+    padding-left: 50px;
+}
+
+.footer__block {
+    background-color: var(--mau_chu_dao_1);
+}
+
+.footer__block__logo {
+    width: 100%;
+    text-align: center;
+}
+
+.footer__block__logo__img {
+    width: 100%;
+}
+
+.footer__block__social {
+    text-align: center;
+}
+
+.footer__block__social__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+.footer__block__social__item {
+    width: 40px;
+    padding: 9px;
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+    margin-right: 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.footer__block__social__item__icon {
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.footer__block__social__item__icon__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer__block__title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer__block__loca {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.footer__block__loca.mytype {
+    padding: 0;
+}
+
+.footer__block__loca.local::before {
+    content: "\f041";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.footer__block__loca.hotline::before {
+    content: "\f095";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.footer__block__loca__text {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer__block__loca__text.bold {
+    font-weight: bold;
+}
+
+a.footer__block__loca__text {
+    text-decoration: none;
+}
+
+
+
+
+
+
+.over-flow {
+    overflow: hidden;
+}
+
+/* --------------------------------- */
